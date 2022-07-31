@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "normalize.css": "^8.0.1",
+    "vant": "^3.5.3",
     "vue": "^3.2.13"
   },
   "devDependencies": {

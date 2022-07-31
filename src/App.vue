@@ -1,27 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <!-- v-model 语法糖 :modelValue='state' @update:modelValue='xx' -->
+  <Editor v-model="state"></Editor>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent, provide, ref } from 'vue';
+import Editor from './packages/editor';
+import data from './data';
+
+import registerConfig from './utils/editor-config';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
+    Editor,
+  },
+  setup() {
+    const state = ref(data);
+
+    // 全局提供 config
+    provide('config', registerConfig);
+
+    return {
+      state,
+    };
   },
 });
 </script>
 
 <style lang="scss">
+html,
+body,
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  width: 100%;
 }
 </style>
