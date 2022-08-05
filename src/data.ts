@@ -5,8 +5,22 @@
 export interface SchemaDataComponent {
   top: number,
   left: number,
+  /**
+   * 索引
+   */
   zIndex: number,
+  /**
+   * 组件标识
+   */
   key: string,
+  /**
+   * 从组件拖拽时是否需要居中
+   */
+  alignCenter: boolean,
+  /**
+   * 当前组件是否选中
+   */
+  focus: boolean,
 }
 
 export interface SchemaData {

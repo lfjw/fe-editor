@@ -1,0 +1,15 @@
+.editor-block {
+  position: absolute;
+  cursor: pointer;
+  // 覆盖阻止默认事件
+  .editor-block {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

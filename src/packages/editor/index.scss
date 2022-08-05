@@ -72,6 +72,18 @@
         // width: 375px;
         background-color: #ffffff;
         position: relative;
+        // 选中
+        .editor-block-focus {
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: 2px dashed red;
+          }
+        }
       }
     }
   }

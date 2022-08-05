@@ -1,24 +1,20 @@
 # fe-editor
 
-## Project setup
-```
-npm install
-```
+可视化编辑器
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 功能
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- ✅ 1.编辑器搭建布局[v0.0.1]
+- ❎ 2.拖拽实现[v0.1.0]
+- ❎ 3.拖拽辅助线功能
+- ❎ 4.实现重做和撤销功能以及快捷键
+- ❎ 5.实现JSON的导入导出
+- ❎ 6.实现菜单功能
+- ❎ 7.实现编辑菜单功能
+- ❎ 8.实现操控栏渲染
+- ❎ 9.实现操作栏配置属性
+- ❎ 10.实现数据的双向绑定
+- ❎ 11.实现范围选择器物料
+- ❎ 12.下拉菜单物料实现
+- ❎ 13.实现组件的大小缩放功能
+- ❎ 14.调整组件大小的功能
